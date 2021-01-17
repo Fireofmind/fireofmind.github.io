@@ -1,0 +1,469 @@
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&family=Lato&family=Yeseva+One&display=swap");
+
+html {
+  font-size: 15px;
+}
+
+h2,
+h3 {
+  font-family: "Yeseva One", cursive;
+}
+
+h2 {
+  color: #ffffff;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 6rem;
+  margin-top: 9rem;
+}
+
+h3 {
+  color:#b7a388;
+  font-size: 2.2rem;
+  width: 100%;
+  text-align: center;
+}
+
+h3::after {
+  content: "";
+  display: block;
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  height: 24px;
+  width: 100%;
+  background: url("../assets/divider.png") center no-repeat;
+}
+
+p {
+  font-family: "Lato", "Arial", sans-serif;
+  color: #4c4c4c;
+  white-space: pre-line;
+}
+
+/* Header */
+
+.container {
+  height: auto;
+}
+
+.container-hero {
+  position: relative;
+  background: url("../assets/background.jpg") no-repeat left;
+  background-size: cover;
+  padding-bottom: 1px;
+  box-shadow: inset 25px 110px 100px 0px rgba(0, 0, 0, 0.4);
+}
+
+.container-hero::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(61, 61, 61, 0.1);
+}
+
+nav {
+  height: 110px;
+}
+
+.navbar {
+  padding: 0;
+}
+
+nav a {
+  font-family: "Gentium Book Basic", serif;
+  font-weight: bold;
+  color: white;
+  font-size: 1.4rem;
+  margin-right: 2rem;
+}
+
+#logo {
+  position: absolute;
+  width: 160px;
+  height: 100%;
+  background: url("../assets/Logo2.png") no-repeat center;
+  left: -1.8rem;
+  top: -1.9rem;
+}
+
+/*Иконки*/
+
+.social-icons-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.social-icons-header a {
+  margin-right: 1.3rem;
+}
+
+.social-icons-header i {
+  font-size: 16px;
+  color:#ffd194;
+}
+
+.divider {
+  width: 230px;
+  height: 43px;
+  background: url("../assets/divider-hero.png") no-repeat center;
+  margin: 3.33rem auto 2rem auto;
+  position: relative;
+  z-index: 10;
+}
+
+.container-buttons {
+  margin: 0 auto 9.3rem auto;
+  display: flex;
+  justify-content: center;
+  z-index: 50;
+}
+
+.container-about {
+  background: url("../assets/Section\ Background.png") no-repeat right;
+  background-size: cover;
+  box-shadow: inset 0px 55px 100px -20px rgba(0, 0, 0, 0.2);
+}
+
+.button-hero {
+  font-family: "Lato", "Arial", sand-serif;
+  font-size: 1.2rem;
+  width: 228px;
+  padding: 15px 0;
+  text-transform: uppercase;
+  z-index: 50;
+}
+
+.button-book {
+  background-color: rgba(0, 0, 0, 0.56);
+  border: 1px solid black;
+  color: white;
+  margin-right: 2rem;
+}
+
+.button-menu {
+  background-color: rgba(255, 255, 255, 0.196);
+  border: 1px solid white;
+  color: white;
+}
+
+/* Стили контейнеров*/
+
+.card {
+  background: none;
+  border: none;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Контейнер About*/
+
+.container-about {
+  padding-top: 100px;
+}
+
+.container-about .card {
+  min-height: 510px;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 430px;
+  text-align: center;
+}
+
+.about-card .card img {
+  margin-top: 20px;
+  position: relative;
+  right: -35px;
+}
+
+.about-image .card img {
+  position: relative;
+  top: -35px;
+}
+
+/* Контейнер-1*/
+
+.container-ingredients {
+  padding: 100px 0;
+  background: url("../assets/section1bg.jpg") no-repeat;
+}
+
+.container-ingredients .col-xl-6 {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+}
+
+.container-ingredients .col-xl-6 .card {
+  color: white;
+  padding: 5rem 0;
+  max-width: 430px;
+}
+
+.container-ingredients .col-xl-6 h3,
+.container-ingredients .col-xl-6 p {
+  color: inherit;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+
+.gallery-item {
+  cursor: pointer;
+  box-sizing: content-box;
+  width: 6.66rem;
+  height: 6.66rem;
+  border: solid 5px rgba(255, 255, 255, 0.09);
+  border-radius: 50%;
+}
+
+.gallery-item-1 {
+  background: url("../assets/gallery/image.png") center no-repeat;
+}
+
+.gallery-item-2 {
+  background: url("../assets/gallery/image-2.png") center no-repeat;
+}
+
+.gallery-item-3 {
+  background: url("../assets/gallery/image-3.png") center no-repeat;
+}
+
+/*Section Menu*/
+
+.container-menu {
+  padding: 100px 0;
+  background-image: url("../assets/pattern-2.jpg");
+  background-size: cover;
+  box-shadow: inset 20px 35px 150px -10px rgba(0, 0, 0, 0.3);
+}
+
+.container-menu .col-lg-6 {
+  padding: 0 70px;
+}
+
+.container-menu .card {
+  width: 100%;
+}
+
+.container-menu .card:not(:last-child) {
+  margin-bottom: 70px;
+}
+
+.menu-detail {
+  position: relative;
+  width: 100%;
+}
+
+.special::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-sizing: content-box;
+  padding: 8px 10px;
+  top: -8px;
+  left: -10px;
+  position: absolute;
+  border: 1px solid #b7a388;
+}
+
+.product {
+  font-family: "Yeseva One", cursive;
+  font-size: 21px;
+  color: #4b463f;
+}
+
+.product::after {
+  float: right;
+  content: "$" attr(data-price);
+}
+
+.menu-separator {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 1px;
+  width: 100%;
+  background: url("../assets/menu-separator.png");
+}
+
+p.product-descr {
+  text-align: left;
+  margin: 0;
+}
+
+.menu-detail:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+/*Обзор*/
+
+.container-review {
+  padding: 100px 0;
+  background: url("../assets/reviews-bg-big.jpg");
+}
+
+.container-review .row {
+  justify-content: center;
+}
+
+.container-review .col-8 {
+  padding: 100px 70px;
+}
+
+.container-review .col-8::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url("../assets/reviews-bg.jpg");
+  background-size: cover;
+  opacity: 0.9;
+}
+
+.container-review h3 {
+  position: relative;
+  color: white;
+}
+
+div.review {
+  position: relative;
+  text-align: center;
+  font-size: 25px;
+  line-height: 45px;
+  color: #dde0df;
+  z-index: 10;
+}
+
+div.review::before {
+  content: "“";
+  font-family: "Georgia", serif;
+  font-size: 6.4rem;
+  color: #f2f4f4;
+  position: absolute;
+  left: -50px;
+  top: 10px;
+}
+
+span.author {
+  font-family: "Lato", "Arial", sans-serif;
+  position: relative;
+  display: block;
+  font-size: 1.2rem;
+  color: #dde0df;
+  text-align: center;
+  margin-top: 20px;
+  z-index: 10;
+}
+
+/* Регистрация */
+
+.container-reserve {
+  padding: 100px 0;
+}
+
+.col-sm-3 img {
+  width: 100%;
+}
+
+.reservation-form form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.reservation-form form input {
+  box-sizing: border-box;
+  display: block;
+  border: 1px solid #c89f2d;
+  padding: 7px 10px;
+  width: 100%;
+}
+
+.reservation-form form input[type="date"] {
+  padding: 6px 10px;
+}
+
+.reservation-form form label {
+  font-family: "Open-Sans", "Lato" "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  flex-basis: 200px;
+  flex-grow: 0.45;
+  color: #c9a131;
+  margin-top: 0.4rem;
+}
+
+.reservation-form form input[type="submit"] {
+  margin-top: 0.5rem;
+}
+
+/*Футер*/
+
+footer {
+  padding: 60px 0 70px 0;
+  background-color: #191919;
+  color: white;
+}
+
+.container-footer .col {
+  flex-basis: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer span {
+  width: 100%;
+  font-family: "Yeseva One", "Georgia", serif;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+footer span::after {
+  content: "";
+  display: block;
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  height: 24px;
+  width: 100%;
+  background: url("../assets/divider-footer.png") center no-repeat;
+}
+
+footer p {
+  color: inherit;
+  text-align: center;
+  font-size: 1.065rem;
+  line-height: 1.565rem;
+}
+
+.social-icons-footer {
+  display: flex;
+  width: auto;
+  justify-content: center;
+}
+
+.fab {
+  color: white;
+  font-size: 16px;
+}
+
+.social-icons-footer a:not(:last-child) {
+  margin-right: 10px;
+}
